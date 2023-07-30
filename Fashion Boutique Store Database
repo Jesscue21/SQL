@@ -1,0 +1,18 @@
+CREATE TABLE clothes (ID INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, color TEXT, size TEXT );
+
+INSERT INTO clothes VALUES (1, "Jeans", 4, 500, "green", 4);
+
+INSERT INTO clothes VALUES (2, "dresses", 5, 200, "blue", 6);
+
+INSERT INTO clothes VALUES (3, "skirts", 6, 300, "pink", 2);
+
+INSERT INTO clothes VALUES (4, "leggings", 3, 50, "black", 0); 
+SELECT * FROM clothes ORDER BY size;
+
+SELECT SUM(quantity) FROM clothes;
+
+I have created a database of items for a fashion "boutique" type of store.
+
+I ordered them by size available.
+
+I Added the total quantity of available items.
